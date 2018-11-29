@@ -32,7 +32,7 @@ int main(){
   timeval tv;
   tv.tv_sec = 0;
   tv.tv_usec = 500000;
-/*
+  
   char _buf[1024];
   memset(_buf, 0, sizeof(_buf));
   fd_set readset;
@@ -53,12 +53,6 @@ int main(){
       }
     }
   }
-*/
-
-  int epollfd = epoll_create1(0);
-  struct epoll_event ev,events;
-
-  while()
 
   return 0;
 }
